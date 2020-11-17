@@ -181,6 +181,8 @@ body {
   text-decoration: none;
 }
 
+/*  Contact Styling  */
+
 .container .main-content #contact {
   margin: 50px;
 }
@@ -225,6 +227,27 @@ body {
   background-color: rgb(78, 78, 78);
 }
 
+/*  Footer Styling */
+
+.container .main-content #footer {
+  margin-top: 10px;
+  padding: 25px;
+  background: rgb(15, 49, 214);
+  background: linear-gradient(
+    60deg,
+    rgba(15, 49, 214, 1) 0%,
+    rgba(22, 118, 218, 1) 58%,
+    rgba(16, 216, 236, 1) 100%
+  );
+  color: white;
+}
+
+.container .main-content #footer h4 {
+  font-weight: 300;
+  font-size: 0.8em;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .container {
     display: grid;
@@ -255,6 +278,9 @@ body {
     grid-area: content;
     overflow-y: visible;
   }
+}
+
+@media (max-width: 536px) {
   .container .main-content #projects,
   .container .main-content #about,
   .container .main-content #contact {
