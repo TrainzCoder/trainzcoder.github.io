@@ -99,18 +99,18 @@ body {
 }
 
 /*  About Styling  */
-.container #about {
+.container .main-content #about {
   margin: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "text image";
 }
 
-.container #about .about-text {
+.container .main-content #about .about-text {
   grid-area: text;
 }
 
-.container #about .about-img {
+.container .main-content #about .about-img {
   grid-area: image;
 }
 
@@ -254,5 +254,31 @@ body {
   .container .main-content {
     grid-area: content;
     overflow-y: visible;
+  }
+  .container .main-content #projects,
+  .container .main-content #about,
+  .container .main-content #contact {
+    margin: 50px 10px;
+  }
+
+  .container .main-content #about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .container .main-content #about .about-text h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .container .main-content #about .about-text p {
+    text-align: center;
+  }
+
+  .container .main-content #about .about-img {
+    height: 330px;
   }
 }
